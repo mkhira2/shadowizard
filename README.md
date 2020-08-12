@@ -1,6 +1,6 @@
 # What is this?
 
-Get perfect shadows every time for the non-designer.
+Get perfect shadows every time for the non-designer. As seen on [npm](https://www.npmjs.com/package/kenji_shadowizard)!
 
 # Installation
 
