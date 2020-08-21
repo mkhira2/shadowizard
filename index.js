@@ -9,9 +9,16 @@ function shadowizard(options) {
 
     images.forEach(image => {
         image.style.boxShadow = `10px 10px ${options.shadow_type} 1px rgba(0,0,0,0.12)`;
-        
-        if (options.padding) {
+
+        if (options.padding === true) {
             image.style.padding = "1em";
+        }
+
+        if (typeof options.padding === "number") {
+            image.style.padding = options.padding + "px";
+        }
+        if (typeof options.padding === "string" && String(options.padding).endsWith("px")) {
+            image.style.padding = options.padding;
         }
     })
 }
